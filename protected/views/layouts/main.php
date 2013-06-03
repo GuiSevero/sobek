@@ -44,7 +44,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	  <script src="<?php echo $baseUrl;?>/js/bootstrap.min.js"></script>
-	  <script src="<?php echo $baseUrl;?>/js/less.js"></script>
 
   </body>
 </html>

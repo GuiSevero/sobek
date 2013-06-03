@@ -6,6 +6,7 @@ $this->pageTitle=Yii::app()->name;
 Yii::app()->clientScript->registerCoreScript('jquery');
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl .'/js/tinymce/tinymce.min.js', CClientScript::POS_END);
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl .'/js/sobek_editor.js', CClientScript::POS_END);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl .'/js/file_helper.js', CClientScript::POS_END);
 //Yii::app()->clientScript->registerCssFile('url');
 
 
@@ -26,7 +27,7 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl .'/js/sobek_edi
   <div class="tab-pane" id="text">
   <h4>Text Editor</h4>
 	  <textarea class="editor" id="raw-text"></textarea>
-	  <?php echo CHtml::link('Parse Text',null,array('id'=>'btn-text', 'class'=>'btn pull-right'))?>
+	  <input type="file" id="file-input">
   </div>
   <div class="tab-pane active" id="sobek">
   <object type="application/x-java-applet" height="300" width="550" >
