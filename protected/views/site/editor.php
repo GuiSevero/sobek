@@ -30,10 +30,10 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl .'/js/file_help
 	  <input type="file" id="file-input">
   </div>
   <div class="tab-pane active" id="sobek">
-  <object type="application/x-java-applet" height="300" width="550" >
-        <param name="code" value="gui/Web" />
-        <param name="archive" value="<?php echo Yii::app()->baseUrl?>/applet/AppletSobek.jar" />
-        <param name="palavra" id="sobek-text-input" value="">
+  <object type="application/x-java-applet" height="800" width="600" >
+        <param name="code" value="grafo.WebGraphViewImages" />
+        <param name="archive" value="<?php echo Yii::app()->baseUrl?>/applet/AppletUCI.jar" />
+        <param name="palavra" id="sobek-text-input" value="qualquer texto texto texto texto qualquer">
         Applet failed to run.  No Java plug-in was found.
   </object>
   
