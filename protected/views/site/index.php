@@ -24,18 +24,8 @@ You are ready to go! When logging into the system, a new tab will be open for yo
 </p>
 
 
-<form class="form-inline well" method="POST" action="<?php echo $this->createUrl('/site/autoeditor')?>">
-	<h3>Auto Editor</h3>
-	<div class="input-prepend">
-      <span class="add-on"><i class="icon-envelope"></i></span>
-      <?php echo CHtml::tag('input',array('name'=>'email', 'id'=>'email', 'type'=>'email','placeholder'=>'Type your email adress', 'required'=>true))?>
-    </div>
-	<?php echo CHtml::submitButton('Send', array('class'=>'btn btn-primary'))?>
-</form>
-
-
 <form class="form-inline well" method="POST" action="<?php echo $this->createUrl('/site/editor')?>">
-	<h3>Manual Editor</h3>
+	<h3>Get Started</h3>
 	<div class="input-prepend">
       <span class="add-on"><i class="icon-envelope"></i></span>
       <?php echo CHtml::tag('input',array('name'=>'email', 'id'=>'email', 'type'=>'email','placeholder'=>'Type your email adress', 'required'=>true))?>
