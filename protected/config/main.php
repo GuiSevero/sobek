@@ -41,8 +41,11 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+				//Custom routes
 				'editor'=>'/site/editor/',
-					
+				'autoeditor'=>'/site/autoeditor/',
+				
+				//Default routes
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

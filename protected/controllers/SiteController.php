@@ -35,20 +35,23 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 	
-	/**
-	 * This is the default 'index' action that is invoked
-	 * when an action is not explicitly requested by users.
-	 */
 	public function actionEditor()
 	{
 		if(isset($_POST['email'])){
 			$this->render('editor', array('email'=>$_POST['email']));
 		}else{
-			$this->redirect(array('/site'));
+			$this->render('home_editor');
 		}
 		
-		
-		
+	}
+	
+	
+	public function actionAutoeditor(){
+		if(isset($_POST['email'])){
+			$this->render('auto_editor', array('email'=>$_POST['email']));
+		}else{
+			$this->render('home_auto_editor');
+		}
 	}
 
 	/**

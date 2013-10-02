@@ -37,7 +37,7 @@
       <hr>
 
       <footer>
-        <p>&copy; UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL - 2013</p>
+        <p align="center">&copy; UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL - 2013</p>
       </footer>
 
     <!-- Le javascript
